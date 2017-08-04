@@ -1,0 +1,81 @@
+#app{
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  display: block;
+}
+.preview{
+  background: #fff;
+}
+.form{
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.closex{
+
+  position:relative;
+  left: 160px;
+  top: -48px;
+  max-width: 30px;
+  max-height: 30px;
+  cursor:pointer;
+}
+.compn{
+  animation: slideleft 0.5s;
+  -webkit-animation: slideleft 0.5s;
+  background: #fff;
+}
+@keyframes slideleft {
+  from{margin-left: -300px;opacity: 0}
+  to{margin-left: 0; opacity: 1}
+}
+.edform{
+  margin: 0 auto;
+  margin-top:20px;
+  max-width: 700px;
+  background: #fff;
+  display: block;
+
+}
+.edform button{
+  clear:both;
+  padding:11px;
+  background: #fff;
+  border:1px solid #ccc;
+  cursor: pointer;
+  margin: 5px ;
+  border-radius: 5px;
+  display:block;
+  float:right;
+}
+.edform button:hover{
+    border:1px solid lightblue;
+    color:lightblue
+}
+.read{
+  float:left;
+}
+.editButton{
+  float:left;
+}
+
+.edform input{
+   height: 30px;
+   display:block;
+   margin: 0 auto;
+   margin: 5px;
+   padding:0px 0.5%;
+   border: 1px solid #ccc;
+
+}
+.edform input:focus{
+  border:2px solid lightblue;
+}
+.edform .ingres{
+  float:left
+}
+.edform .ingres input{
+  display:inline;
+}
