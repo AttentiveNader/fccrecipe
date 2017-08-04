@@ -124,12 +124,13 @@ console.log(this.refs)
 
   componentDidMount(){
     let self = this
-
+if(localStorage.getItem('user')){
     if(JSON.parse(localStorage.getItem('user')).recipes.length){
       console.log(localStorage.getItem('user'),'hey youoooo user here')
       this.state.data = JSON.parse(localStorage.getItem('user'))
       this.forceUpdate()
     }
+  }
     console.log('get it done')
     for(let ke in this.state.data.recipes){
       self.state.data.recipes[ke].index = ke
