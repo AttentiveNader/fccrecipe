@@ -117,7 +117,7 @@ console.log(this.refs)
   this.state.data.recipes.push({
     name:'',
     ingredients:[],
-    index:this.state.data.recipes.length-1
+    index:this.state.data.recipes.length
   })
   this.forceUpdate()
   }
